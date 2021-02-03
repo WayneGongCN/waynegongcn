@@ -364,6 +364,11 @@
     font-size: 7px;
   }
 
+  .chart-bars .entry .empty {
+    width: 100%;
+    text-align: center;
+  }
+
   .chart-bars .bar {
     width: 7px;
     background-color: var(--color-calendar-graph-day-bg);
@@ -373,7 +378,6 @@
 
   .chart-bars.horizontal {
     flex-direction: column;
-    align-items: space-between;
     height: 100%;
   }
 
@@ -386,7 +390,10 @@
   .chart-bars.horizontal .entry .name {
     flex-shrink: 0;
     text-align: right;
-    min-width: 30%;
+    width: 34%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .chart-bars .entry .bottom {
@@ -900,8 +907,8 @@
             </div>
           
             <div class="entry">
-              <span class="value">4</span>
-              <div class="bar" style="height: 16.666666666666664px; background-color: var(--color-calendar-graph-day-L2-bg)"></div>
+              <span class="value">2</span>
+              <div class="bar" style="height: 8.333333333333332px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
               20
             </div>
           
@@ -946,8 +953,8 @@
               </div>
             
               <div class="entry">
-                <span class="value">6</span>
-                <div class="bar" style="height: 12.5px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
+                <span class="value">4</span>
+                <div class="bar" style="height: 8.333333333333332px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
                 Tue
               </div>
             
@@ -1011,16 +1018,9 @@
               <div class="entry">
                 <span class="value">49</span>
                 <div class="bar" style="height: 2.5px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
-                20
+                21
                 
                   <div class="bottom">Jan.</div>
-                
-              </div>
-            
-              <div class="entry">
-                <span class="value"></span>
-                <div class="bar" style="height: 2.5px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
-                21
                 
               </div>
             
@@ -1110,6 +1110,13 @@
                 
               </div>
             
+              <div class="entry">
+                <span class="value"></span>
+                <div class="bar" style="height: 50px; background-color: var(--color-calendar-graph-day-L4-bg)"></div>
+                3
+                
+              </div>
+            
           </div>
         </section>
         <section class="column chart">
@@ -1119,16 +1126,9 @@
               <div class="entry">
                 <span class="value"></span>
                 <div class="bar" style="height: 0px; background-color: var(--color-calendar-graph-day-L0-bg)"></div>
-                20
+                21
                 
                 <div class="bottom">Jan.</div>
-                
-              </div>
-            
-              <div class="entry">
-                <span class="value"></span>
-                <div class="bar" style="height: 0px; background-color: var(--color-calendar-graph-day-L0-bg)"></div>
-                21
                 
               </div>
             
@@ -1218,6 +1218,13 @@
                 
               </div>
             
+              <div class="entry">
+                <span class="value"></span>
+                <div class="bar" style="height: 0px; background-color: var(--color-calendar-graph-day-L0-bg)"></div>
+                3
+                
+              </div>
+            
           </div>
         </section>
       </div>
@@ -1243,7 +1250,7 @@
                   
                   <div class="name">
                     <span>eligrey/FileSaver.js</span>
-                    <span>starred 19 days ago</span>
+                    <span>starred 20 days ago</span>
                   </div>
                 </div>
                 <div class="field description">
@@ -1290,7 +1297,7 @@
                   
                   <div class="name">
                     <span>keybase/kbpgp</span>
-                    <span>starred 19 days ago</span>
+                    <span>starred 20 days ago</span>
                   </div>
                 </div>
                 <div class="field description">
@@ -1337,7 +1344,7 @@
                   
                   <div class="name">
                     <span>heiswayi/pgp</span>
-                    <span>starred 19 days ago</span>
+                    <span>starred 20 days ago</span>
                   </div>
                 </div>
                 <div class="field description">
@@ -1417,6 +1424,8 @@
 
 
 
+      
+        
       
 
       
